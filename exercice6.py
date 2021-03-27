@@ -6,6 +6,12 @@ So, if someone were to call pl_sentence('this is a test translation') the output
 Print the output on a single line, rather than with each word on a separate line.
 '''
 
+def pig_latin(word):
+    if word[0] in 'aeiou':
+        return f'{word}way'
+    return f'{word[1:]}{word[0]}ay'
+print(pig_latin('python'))
+
 def pl_sentence(en_sentence): 
   pig_translation = ''
   
